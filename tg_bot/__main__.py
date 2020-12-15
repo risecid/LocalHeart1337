@@ -43,7 +43,7 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nKamu bisa menggunakan command dengan format  / atau !  untuk menggunakannya...\n")
 
 DONATE_STRING = """Heya, senang mendengar Anda ingin menyumbang!
-Butuh banyak pekerjaan untuk [pencipta saya] (t.me/localheart1337) untuk membawa saya ke tempat saya sekarang, dan setiap sumbangan membantu \
+Butuh banyak pekerjaan untuk [pencipta saya](t.me/rian1337) untuk membawa saya ke tempat saya sekarang, dan setiap sumbangan membantu \
 memotivasi dia untuk membuat saya lebih baik. Semua uang sumbangan akan diberikan kepada VPS yang lebih baik untuk menampung saya, dan / atau bir \
 (lihat bio-nya!). Dia hanya murid yang miskin, jadi setiap sedikit membantu!
 Ada dua cara untuk membayarnya; [PayPal](paypal.me/RiSecID)."""
