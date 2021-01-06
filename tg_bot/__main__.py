@@ -18,11 +18,12 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Halo {}, namaku adalah {}! jika Anda memiliki pertanyaan tentang cara menggunakan saya, tolong beri saya ketik /help... 
+Hai! {}, Namaku adalah {}! Saya adalah bot manajemen grup yang di kelola oleh [Master saya ini](tg://user?id={}).
+Anda tidak di perbolehkan menambahkan bot ini pada grub manapun tanpa seizin dari saya, Karena ini adalah bot pribadi yang di khususkan untuk grub [ISCModz Chat](t.me/iscchat)!.
 
-Aku Di kelola oleh  [Orang Ini](tg://user?id={}).
+Anda dapat melihat daftar perintah yang tersedia pada bot dengan perintah /help.
 
-Untuk perintah lainnya klik /help...
+Bot ini tidak tersedia untuk publik!, apabila anda juga ingin membuat bot pribadi untuk memanajemen grub milik anda sendiri anda bisa menghubungi saya!.
 
 """
 
@@ -33,7 +34,6 @@ Hai! Namaku *{}*.
 *Main* tersedia command:
  - /start: Untuk memulai bot...
  - /help: Menu bantuan....
- - /donate: Untuk memberi donasi!
  - /settings:
    - in PM: Untuk mengetahui PENGATURAN apa yang telah Anda tetapkan ....
    - in a group:
@@ -353,7 +353,7 @@ def get_settings(bot: Bot, update: Update):
                                                       url="t.me/{}?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
-            text = "Click here to check your settings."
+            text = "Klik di sini untuk melihat daftar pengaturan anda."
 
     else:
         send_settings(chat.id, user.id, True)
@@ -368,7 +368,7 @@ def donate(bot: Bot, update: Update):
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
         if OWNER_ID != 1189883739 and DONATION_LINK:
-            update.effective_message.reply_text("You can also donate to the person currently running me "
+            update.effective_message.reply_text("Kamu selalu bisa donasi setiap saat untuk keberlangsungan saya"
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
 
