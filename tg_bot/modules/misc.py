@@ -69,7 +69,8 @@ RUN_STRINGS = (
 )
 
 DAKWAH_STRING = (
-    "Laa taquumus saa’atu ‘alaa ahadin yaquulu Allah… Allah… (HR Muslim) Artinya: Tidak akan datang kiamat selama masih ada yang mengucap Allah… Allah…"
+    "Laa taquumus saa’atu ‘alaa ahadin yaquulu Allah… Allah… (HR Muslim) Artinya: Tidak akan datang kiamat selama masih ada yang mengucap Allah… Allah…",
+    "Ad du’aau mukhkhul ibaadah (HR Tirmizi) Artinya: Do’a adalah inti ibadah"
 )
 
 SLAP_TEMPLATES = (
@@ -332,6 +333,9 @@ def kimak(bot: Bot, update: Update):
     data = json.loads(r.text)
     update.effective_message.reply_text(data['simsimi_talk_set']['answers'][0]['sentence'])
 
+@run_async
+def dakwah(bot: Bot, update: Update):
+     update.effective_message.reply_text(random.choice(DAKWAH_STRING))
 
 @run_async
 def gdpr(bot: Bot, update: Update):
@@ -459,6 +463,8 @@ GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 
 KIMAK_HANDLER = MessageHandler(Filters.text, kimak)
 
+DAKWAH_HANDLER = CommandHandler("dakwah", dakwah)
+
 
 dispatcher.add_handler(ID_HANDLER)
 dispatcher.add_handler(IP_HANDLER)
@@ -473,3 +479,4 @@ dispatcher.add_handler(GDPR_HANDLER)
 dispatcher.add_handler(STICKERID_HANDLER)
 dispatcher.add_handler(GETSTICKER_HANDLER)
 # dispatcher.add_handler(KIMAK_HANDLER)
+dispatcher.add_handler(DAKWAH_HANDLER)
