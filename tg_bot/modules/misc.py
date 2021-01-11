@@ -467,7 +467,7 @@ GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 
 KIMAK_HANDLER = MessageHandler(Filters.text, kimak)
 
-DAKWAH_HANDLER = CommandHandler("dakwah", dakwah)
+DAKWAH_HANDLER = CommandHandler("dakwah", dakwah, filters=CustomFilters.sudo_filter)
 
 
 dispatcher.add_handler(ID_HANDLER)
@@ -482,5 +482,5 @@ dispatcher.add_handler(STATS_HANDLER)
 dispatcher.add_handler(GDPR_HANDLER)
 dispatcher.add_handler(STICKERID_HANDLER)
 dispatcher.add_handler(GETSTICKER_HANDLER)
-# dispatcher.add_handler(KIMAK_HANDLER)
+dispatcher.add_handler(KIMAK_HANDLER)
 dispatcher.add_handler(DAKWAH_HANDLER)
