@@ -74,7 +74,16 @@ DAKWAH_STRING = (
     "Ittaqillaha haitsu maa kunta (HR Tirmizi) Artinya: Takutlah kepada Allah dimana saja kamu berada",
     "Ad daallu ‘alal khairi kafaa’ilihi (HR Tirmizi) Artinya: Orang yang mengajak kebaikan mendapat pahala yang sama dengan orang yang diajaknya",
     "Man banaa lillahi masjidan banallahu lahuu baytan fil jannah(HR Muslim) Artinya: Barangsiapa membangun masjid karena Allah maka Allah akan bangunkan rumah baginya di dalam surga",
-    "At thuhuuru syathrul imaan (HR Muslim) Artinya: Kebersihan adalah sebagian iman"
+    "At thuhuuru syathrul imaan (HR Muslim) Artinya: Kebersihan adalah sebagian iman",
+    "Khairukum man ta’allamal Qur’aana wa ‘allamahu (HR Bukhari) Artinya: Sebaik-baik orang di antara kamu adalah orang yang belajar Al Qur’an dan mengajarkannya",
+    "Man hamala ‘alainas silaaha fa laisa minnaa (HR Bukhari) Artinya: Barangsiapa menakut-nakuti dengan senjata kepada kami maka bukan golongan kami",
+    "Man ‘azzaa musaaban falahu mitslu ajrih (HR Tirmizi) Artinya: Barangsiapa menghibur orang yang tertimpa musibah maka baginya pahala seperti orang yang tertimpa musibah",
+    "Man ghassyanaa fa laisa minnaa (HR Muslim) Artinya: Siapa yang curang bukan golongan kami",
+    "Manintahaba nuhbatan fa laisa minnaa (HR Tirmizi) Artinya: Siapa merampas milik orang bukan golongan kami",
+    "Sibaabul muslimi fusuuqun wa qitaaluhu kufrun (HR Tirmizi) Artinya: Mencaci seorang muslim adalah dosa dan memeranginya adalah kufur",
+    "Ahabbul bilaadi ilallaahi masaajiduha (HR Bukhari) Artinya: Tempat yang paling dicintai Allah di muka bumi adalah masjid-masjidnya",
+    "Al-anaatu minallahi wal ‘ajalatu minas syaithan (HR Tirmizi) Artinya: Kehati-hatian datangnya dari Allah dan ketergesa-gesaan datangnya dari setan",
+    "Assalamu qablal kalam (HR Bukhari) Artinya: Ucap salam sebelum bicara"
 )
 
 SLAP_TEMPLATES = (
