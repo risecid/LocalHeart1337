@@ -64,10 +64,10 @@ def banall(bot: Bot, update: Update, args: List[int]):
 @run_async
 def snipe(bot: Bot, update: Update, args: List[str]):
     try:
-        chat_id = str(args[0])
+        chat_id = int(args[0])
     except TypeError as excp:
         update.effective_message.reply_text("Please give me a chat to echo to!")
-    to_send = " "
+    to_send = " ".join(args)
     if len(to_send) >= 2:
         try:
             bot.sendMessage(int(chat_id), str(to_send))
