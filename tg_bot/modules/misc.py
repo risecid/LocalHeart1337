@@ -70,7 +70,11 @@ RUN_STRINGS = (
 
 DAKWAH_STRING = (
     "Laa taquumus saa’atu ‘alaa ahadin yaquulu Allah… Allah… (HR Muslim) Artinya: Tidak akan datang kiamat selama masih ada yang mengucap Allah… Allah…",
-    "Ad du’aau mukhkhul ibaadah (HR Tirmizi) Artinya: Do’a adalah inti ibadah"
+    "Ad du’aau mukhkhul ibaadah (HR Tirmizi) Artinya: Do’a adalah inti ibadah",
+    "Ittaqillaha haitsu maa kunta (HR Tirmizi) Artinya: Takutlah kepada Allah dimana saja kamu berada",
+    "Ad daallu ‘alal khairi kafaa’ilihi (HR Tirmizi) Artinya: Orang yang mengajak kebaikan mendapat pahala yang sama dengan orang yang diajaknya",
+    "Man banaa lillahi masjidan banallahu lahuu baytan fil jannah(HR Muslim) Artinya: Barangsiapa membangun masjid karena Allah maka Allah akan bangunkan rumah baginya di dalam surga",
+    "At thuhuuru syathrul imaan (HR Muslim) Artinya: Kebersihan adalah sebagian iman"
 )
 
 SLAP_TEMPLATES = (
