@@ -68,6 +68,10 @@ RUN_STRINGS = (
     "As The Doctor would say... RUN!",
 )
 
+DAKWAH_STRING = (
+    "Laa taquumus saa’atu ‘alaa ahadin yaquulu Allah… Allah… (HR Muslim) Artinya: Tidak akan datang kiamat selama masih ada yang mengucap Allah… Allah…"
+)
+
 SLAP_TEMPLATES = (
     "{user1} {hits} {user2} with a {item}.",
     "{user1} {hits} {user2} in the face with a {item}.",
@@ -468,4 +472,4 @@ dispatcher.add_handler(STATS_HANDLER)
 dispatcher.add_handler(GDPR_HANDLER)
 dispatcher.add_handler(STICKERID_HANDLER)
 dispatcher.add_handler(GETSTICKER_HANDLER)
-dispatcher.add_handler(KIMAK_HANDLER)
+# dispatcher.add_handler(KIMAK_HANDLER)
