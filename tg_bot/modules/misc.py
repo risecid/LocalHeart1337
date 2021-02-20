@@ -340,6 +340,13 @@ def echo(bot: Bot, update: Update):
     message.delete()
 
 @run_async
+def mimi(bot: Bot, update: Update):
+    url = 'https://secureapp.simsimi.com/v1/simsimi/talkset?uid=297390035&av=6.9.3.7&lc=id&cc=ID&tz=Asia%2FJakarta&os=a&ak=Nsh1x94iNA2oftvixJMmTj1awEk%3D&message_sentence={}&normalProb=8&isFilter=1&talkCnt=8&talkCntTotal=8&reqFilter=1&session=MMWBpntzK2hS64aX7SuhQHTcsHCrVftmwJBk7cGd3ViCyVTFx4ywxuEvvTHnQWrt9ENooUhdQXaD6XrDuTyGbSv2&triggerKeywords=%5B%5D'.format(update.effective_message.text)
+    r = requests.get(url)
+    data = json.loads(r.text)
+    update.effective_message.reply_text(data['simsimi_talk_set']['answers'][0]['sentence'])
+
+@run_async
 def dakwah(bot: Bot, update: Update):
      update.effective_message.reply_text(random.choice(DAKWAH_STRING))
 
@@ -468,6 +475,7 @@ STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 
 DAKWAH_HANDLER = CommandHandler("dakwah", dakwah, filters=CustomFilters.sudo_filter)
+MIMI_HANDLER = MessageHandler(Filters.text, mimi)
 
 
 dispatcher.add_handler(ID_HANDLER)
@@ -483,3 +491,4 @@ dispatcher.add_handler(GDPR_HANDLER)
 dispatcher.add_handler(STICKERID_HANDLER)
 dispatcher.add_handler(GETSTICKER_HANDLER)
 dispatcher.add_handler(DAKWAH_HANDLER)
+dispatcher.add_handler(MIMI_HANDLER)
