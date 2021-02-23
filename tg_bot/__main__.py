@@ -231,7 +231,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Hubungi saya di PM untuk mendapatkan daftar perintah yang mungkin.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="Help",
-                                                                       url="t.me/rian1337?start=help".format(
+                                                                       url="t.me/iscmodzbot?start=help".format(
                                                                            bot.username))]]))
         return
 
