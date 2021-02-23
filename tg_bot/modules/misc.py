@@ -84,6 +84,9 @@ DAKWAH_STRING = (
     "Ahabbul bilaadi ilallaahi masaajiduha (HR Bukhari) Artinya: Tempat yang paling dicintai Allah di muka bumi adalah masjid-masjidnya",
     "Al-anaatu minallahi wal ‘ajalatu minas syaithan (HR Tirmizi) Artinya: Kehati-hatian datangnya dari Allah dan ketergesa-gesaan datangnya dari setan",
     "Assalamu qablal kalam (HR Bukhari) Artinya: Ucap salam sebelum bicara"
+    "Ad diinu yusrun (HR Bukhari) Artinya: Agama itu mudah"
+    "Asmik ‘alaika lisaanaka Artinya: Jagalah lisanmu (HR. Tirmidzi)"
+    "Al-muslimu akhuul muslimi laa yazhlimuhuu walaa yuslimuhú Artinya, “Muslim itu bersaudara bagi muslim yang lainnya, Jangan menzaliminya dan jangan memasrahkannya”(HR.Bukhori-Muslim)"
 )
 
 SLAP_TEMPLATES = (
